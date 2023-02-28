@@ -1,0 +1,156 @@
+/*-------LAYOUT-------*/
+.main_container {
+    display: flex;
+    /*width: 1200px;
+    height: 1200px;*/
+    margin: 0 auto;
+}
+/* Redondeado de la Foto */
+#profile_pic img{
+    border-radius: 50%;
+}
+/*-------GENERAL-------*/
+ul {
+    list-style-type: none;
+}
+/*PONIENDO LOS TITULOS EN MAYUSCULAS*/
+h1,
+h2 {
+    text-transform: uppercase;
+}
+/*-------ASIDE-------*/
+/*Color del ASIDE*/
+aside {
+    background-color: #04b2d9;
+    width: 50%;
+    margin-right: 2%;
+}
+aside *{
+    color: black;
+}
+
+aside h2 {
+/*Pasando a Mayusculas*/
+text-transform: uppercase;
+/*Espaciado entre letras*/
+letter-spacing: 2px;
+}
+/*Seleccionando el primer h2 para que este subrayado*/
+aside section h2:first-child {
+border-bottom: 2px solid black;
+}
+/*-------MAIN (antigua clase "hero")-------*/
+main section h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.principal_1 {
+    background-color: #b2bebf;
+    
+}
+.principal_1 h2 {
+    border-top: 2px solid white;
+    letter-spacing: 15%;
+}
+.principal_1 {
+    box-shadow: 3px 3px 30px 5px #d9d6d0 inset;
+    /*PROBANDO(ENCERRAR EL TITULO EN UNA CAJA)*/
+    padding: 15% 0;
+    text-align: center;
+    
+}
+
+.principal_2 p{
+    line-height: 2em;
+    background-color: #d9d6d0;
+    padding: 5px;
+}
+.principal_3 p{
+    line-height: 2em;
+    background-color: white;
+    padding: 5px;
+}
+
+/*-------*/
+article h3 {
+    font-weight: bold;
+}
+/*-------DL-------*/
+dt {
+    width: 30%;
+    float: left;
+    
+}
+/*-------Subrayado del dd-------*/
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+dt,
+dd {
+    line-height: 1,5em;
+    border-top: 3px solid white;
+    flex-basis: 40%;
+    margin: 0;
+}
+dt :last-of-type,
+dd :last-of-type {
+    border-bottom: 1px solid white;
+}
+dt {
+    font-weight: bolder;
+}
+/*-------ICONOS-------*/
+.email::before{
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.social-item1::before{
+    padding-right: 10px;
+}
+.mobile::before{
+    content: "\f3ce";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.social-item2::before{
+    padding-right: 13px;
+}
+
+.fa-brands::before{
+    padding-right: 10px;
+}
+
+.fa-solid::before{
+    padding-right: 10px;
+}
+
+/*-------Boton de Impresion-------*/
+.gato{
+    display: block;
+    margin: 30px;
+    
+}
+
+/*-------Evitando que al imprimir el CV tambien se imprima el boton de Impresion-------*/
+@media print{
+    .gato, .gato *{
+      display: none !important;
+    }
+  }
+  /*-------Fuentes-------*/
+  .fuente_1{
+    font-family: 'IBM Plex Serif', serif;
+  }
+  
+  .skills{
+    font-family: 'IBM Plex Serif', serif;
+  }
+  .skills{
+    display: flex;
+    
+  }
+  .columna_2{
+    margin-left: 27.5%;
+  }
